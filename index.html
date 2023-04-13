@@ -51,27 +51,29 @@
           </li>
         </ul>
       </section>
-      <form id="modal__container">
-        <header>
-          <h2 class="tittle--medium--bold">registro de valor</h2>
-          <button>X</button>
-        </header>
-        <p class="text--basic">Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
-        <label for="value" class="text--basic--bold">Valor</label>
-        <div class="value-input__container" name="value">
-          <span class="text--basic--bold">R$</span>
-          <input type="text" class="text--basic" placeholder="00,00">
-        </div>
-        <div class="modal__type-selector__container">
-          <h3 class="text--basic--bold">tipo de valor</h3>
-          <button class="filter-button button-outline text--basic--boldest">Entrada</button>
-          <button class="filter-button button-outline text--basic--boldest">Saída</button>
-        </div>
-        <div class="modal__footer">
-          <button class="button button-greylow text--small modal__button-cancel">Cancelar</button>
-          <button class="button--primary text--basic--boldest">Inserir Valor</button>
-        </div>
-      </form>
+      <dialog id="modal__controller">
+        <form id="modal__container">
+          <header>
+            <h2 class="tittle--medium--bold">registro de valor</h2>
+            <button>X</button>
+          </header>
+          <p class="text--basic">Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+          <label for="value" class="text--basic--bold">Valor</label>
+          <div class="value-input__container" name="value">
+            <span class="text--basic--bold">R$</span>
+            <input type="text" class="text--basic" placeholder="00,00">
+          </div>
+          <div class="modal__type-selector__container">
+            <h3 class="text--basic--bold">Tipo de valor</h3>
+            <button class="filter-button button-outline text--basic--boldest">Entrada</button>
+            <button class="filter-button button-outline text--basic--boldest">Saída</button>
+          </div>
+          <div class="modal__footer">
+            <button class="button button-greylow text--small modal__button-cancel">Cancelar</button>
+            <button class="button--primary text--basic--boldest">Inserir Valor</button>
+          </div>
+        </form>
+      </dialog>
     </main>
   </body>
 </html>
