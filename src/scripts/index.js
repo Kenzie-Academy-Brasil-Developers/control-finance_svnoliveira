@@ -1,1 +1,2 @@
-/* Desenvolva sua lógica aqui */
+import { valuesCategory } from "./valuesData.js";
+

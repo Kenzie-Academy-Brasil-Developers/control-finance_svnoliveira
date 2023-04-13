@@ -1,1 +1,102 @@
-/* Desenvolva a estilização da sua página aqui */
+#top > div > h1 > span {
+    color: var(--color-brand-1);
+}
+
+#top {
+    display: flex;
+    height: 20vh;
+    background-color: var(--color-grey-5);
+}
+
+#top > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+#app__header > h2{
+    display: flex;
+    align-items: center;
+    height: 12vh;
+}
+
+#app__header > nav {
+    display: flex;
+    gap: 0.875rem;
+}
+
+#app__balance-display, .transactions__card{
+    border: 0.094rem solid var(--color-grey-4);
+    border-radius: var(--radius-1);
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#app__balance-display {
+    margin: 1.75rem 0rem;
+    height: 2.75rem;
+    background-color: var(--color-grey-5);
+}
+
+#transactions > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.transactions__card > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: fit-content;
+    gap: 2.813rem;
+}
+
+#modal__container {
+    padding: 1.5rem;
+    position: relative;
+}
+
+#modal__container > header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.value-input__container {
+    border: 0.1rem solid var(--color-grey-3);
+    border-radius: var(--radius-2);
+    padding: 0.6rem;
+}
+
+.value-input__container > input{
+    padding-left: 0.8rem;
+}
+
+.modal__type-selector__container {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal__type-selector__container > h3{
+    margin: 1.563rem 0rem 1rem 0rem;
+}
+
+.modal__type-selector__container > button {
+    margin-bottom: 0.75rem;
+}
+
+.modal__footer {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+.modal__footer > button{
+    min-width: 50%;
+    justify-content: center;
+}

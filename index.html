@@ -11,16 +11,67 @@
       type="image/x-icon"
     />
     <meta
-      name="description"
-      content="Control Finance - Seu controle financeiro"
+    name="description"
+    content="Control Finance - Seu controle financeiro"
     />
+    <link rel="stylesheet" href="./src/styles/reset.css">
     <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/buttons.css">
     <link rel="stylesheet" href="./src/styles/index.css" />
+    <script type="module" src="./src/scripts/index.js" defer></script>
   </head>
   <body>
-    <main id="app"></main>
-    <script src="./src/scripts/modal.js"></script>
-    <script src="./src/scripts/valuesData.js"></script>
-    <script src="./src/scripts/index.js"></script>
+    <header id="top">
+      <div class="container">
+        <h1 class="tittle--large"><span class="tittle--large">Control</span> Finance</h1>
+        <button id="button__new-entry" class="button--primary text--basic--boldest">Registrar novo valor</button>
+      </div>
+    </header>
+    <main id="app" class="container">
+      <section id="app__header">
+        <h2 class="tittle--medium">Resumo financeiro</h2>
+        <nav id="app__filter-buttons-container">
+          <button class="filter-button button-outline text--basic--boldest">Todos</button>
+          <button class="filter-button button-outline text--basic--boldest">Entradas</button>
+          <button class="filter-button button-outline text--basic--boldest">Saídas</button>
+        </nav>
+      </section>
+      <section id="app__balance-display">
+        <h3 class="text--basic--bold">Soma dos valores</h3>
+        <span class="tittle--medium">R$ 00,00</span>
+      </section>
+      <section id="transactions">
+        <ul>
+          <li class="transactions__card">
+            <span class="tittle--medium">R$ 0</span>
+            <div>
+              <span class="button button-greylow text--small">Entrada</span>
+              <img class="button__remove-entry button" src="./src/assets/trash.svg" alt="recycle bin"></img>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <form id="modal__container">
+        <header>
+          <h2 class="tittle--medium--bold">registro de valor</h2>
+          <button>X</button>
+        </header>
+        <p class="text--basic">Digite o valor e em seguida aperte no botão referente ao tipo do valor</p>
+        <label for="value" class="text--basic--bold">Valor</label>
+        <div class="value-input__container" name="value">
+          <span class="text--basic--bold">R$</span>
+          <input type="text" class="text--basic" placeholder="00,00">
+        </div>
+        <div class="modal__type-selector__container">
+          <h3 class="text--basic--bold">tipo de valor</h3>
+          <button class="filter-button button-outline text--basic--boldest">Entrada</button>
+          <button class="filter-button button-outline text--basic--boldest">Saída</button>
+        </div>
+        <div class="modal__footer">
+          <button class="button button-greylow text--small modal__button-cancel">Cancelar</button>
+          <button class="button--primary text--basic--boldest">Inserir Valor</button>
+        </div>
+      </form>
+    </main>
   </body>
 </html>

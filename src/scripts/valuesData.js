@@ -1,4 +1,4 @@
-const valuesCategory = ["Entrada", "Saída"];
+export const valuesCategory = ["Entrada", "Saída"];
 
 let insertedValues = [
   {

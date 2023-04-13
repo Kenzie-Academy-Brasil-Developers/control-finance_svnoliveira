@@ -1,10 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@600&display=swap");
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 :root {
   --color-brand-1: #6741d9;
@@ -55,4 +55,51 @@ body {
     max-width: 43rem;
     margin: 0 1rem;
   }
+}
+
+/* fonts */
+.tittle--large, .tittle--medium, .tittle--medium--bold {
+line-height: var(--font-line-height-1);
+color: var(--color-grey-1);
+font-family: var(--font-family-1);
+}
+
+.tittle--large {
+  font-weight: var(--font-weight-1);
+  font-size: var(--font-size-1);
+}
+
+.tittle--medium, .tittle--medium--bold {
+  font-size: var(--font-size-2);
+  color: var(--color-grey-1);
+}
+
+.tittle--medium {
+  font-weight: var(--font-weight-2);
+}
+
+.tittle--medium--bold {
+  font-weight: var(--font-weight-1);
+}
+
+.text--basic, .text--basic--bold, .text--basic--boldest {
+  font-size: var(--font-size-3);
+  color: var(--color-grey-1);
+}
+
+.text--basic {
+  font-weight: var(--font-weight-3);
+}
+
+.text--basic--bold {
+  font-weight: var(--font-weight-2);
+}
+
+.text--basic--boldest {
+  font-weight: var(--font-weight-1);
+}
+
+.text--small {
+  font-size: var(--font-size-4);
+  font-weight: var(--font-weight-2);
 }
