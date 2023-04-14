@@ -56,9 +56,16 @@
     gap: 2.813rem;
 }
 
+#modal__controller {
+    border: 0;
+    margin: 1rem;
+    top: 8vh;
+    border-radius: var(--radius-1);
+    min-height: 35%;
+}
+
 #modal__container {
     padding: 1.5rem;
-    position: relative;
 }
 
 #modal__container > header {
@@ -116,6 +123,16 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+    #modal__controller{
+        margin: auto;
+        top: 0;
+    }
+    #modal__container {
+        display: flex;
+        flex-direction: column;
+        height: 35vh;
+        justify-content: space-around;
     }
     .modal__type-selector__container{
         flex-direction: row;

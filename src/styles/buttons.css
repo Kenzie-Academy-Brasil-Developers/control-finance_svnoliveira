@@ -18,8 +18,9 @@ button, .button {
 .button-greylow {
   display: flex;
   align-items: center;
-  max-width: fit-content;
   cursor: default;
+  justify-content: center;
+  width: 4.5rem;
   background-color: var(--color-grey-5);
   color: var(--color-grey-2);
 }
@@ -41,7 +42,7 @@ button, .button {
   width: 1.625rem;
   border-radius: var(--radius-2);
 }
-.button-outline:hover, .button-outline:active{
+.button-outline:hover, .button-outline:active, .button--active{
   border-color: var(--color-brand-1);
   background-color: var(--color-brand-3);
   color: var(--color-brand-1);
